@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#board {
+    background: linear-gradient(to bottom, #000066, #0000cc);
+    height: 540px;
+    width: 630px;
+    background-color: blue;
+    border: 10px solid navy;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the tiles horizontally */
+    align-items: flex-start; /* Align the tiles to the top */
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+/* circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
+.tile:hover {
+    opacity: 0.7;
+    /* or change border color */
+}
+
+.redPieces {
+    background-color: red;
+}
+
+.yellowPieces {
+    background-color: yellow;
+} 
